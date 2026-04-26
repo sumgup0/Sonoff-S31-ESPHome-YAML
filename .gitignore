@@ -1,0 +1,20 @@
+# Secrets — NEVER commit these
+secrets.yaml
+
+# ESPHome / PlatformIO build artifacts
+.esphome/
+.pioenvs/
+.pio/
+.piolibdeps/
+*.bin
+*.elf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

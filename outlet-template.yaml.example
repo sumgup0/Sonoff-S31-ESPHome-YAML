@@ -1,0 +1,43 @@
+# outlet-template.yaml.example
+#
+# Copy to `outlet-<your-name>.yaml` and customize the substitutions below.
+# After flashing, see docs/calibration.md to refine voltage_cal /
+# current_cal / power_cal for this specific outlet.
+
+substitutions:
+  # ─── Identity ──────────────────────────────────────────────────────
+  # Lowercase, hyphen-separated. Becomes the device hostname, mDNS name
+  # (`<device_name>.local`), and HA entity-id prefix.
+  device_name: outlet-rename-me
+
+  # Title-case display name shown in Home Assistant.
+  friendly_name: Rename Me Outlet
+
+  # HA Area assignment (e.g., "Kitchen", "Office", "Living Room").
+  # Auto-created in HA on first adoption if it doesn't exist.
+  area: SomeRoom
+
+  # ─── Calibration ───────────────────────────────────────────────────
+  # Multipliers applied to the CSE7766's voltage / current / power
+  # readings. Leave at "1.00" until you've measured this specific
+  # outlet against a reference meter (Kill-A-Watt or equivalent).
+  # See docs/calibration.md for the procedure.
+  voltage_cal: "1.00"
+  current_cal: "1.00"
+  power_cal:   "1.00"
+
+  # ─── Behavior ──────────────────────────────────────────────────────
+  # Initial value (in watts) for the "Power Threshold" number entity.
+  # Used by the "Active" binary sensor to decide if a load is "on".
+  # Tune in HA after deploying — this is just the boot default.
+  threshold_default: "5"
+
+  # Relay state on boot:
+  #   ALWAYS_OFF          — outlet starts off after every power loss
+  #   ALWAYS_ON           — starts on (good for routers, fridges)
+  #   RESTORE_DEFAULT_OFF — restore previous state, default off
+  #   RESTORE_DEFAULT_ON  — restore previous state, default on
+  restore_mode: ALWAYS_OFF
+
+packages:
+  base: !include common/s31-base.yaml
