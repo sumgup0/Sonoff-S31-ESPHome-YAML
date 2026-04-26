@@ -1,0 +1,16 @@
+# Real per-device file for sumgup0's misc outlet.
+# Calibration values measured 2026-04-25; see ./calibration-data.csv.
+# This was the worst-calibrated of the four chips at +3.50% on power.
+
+substitutions:
+  device_name: outlet-misc
+  friendly_name: Misc Outlet
+  area: Other
+  voltage_cal: "0.9944"        # +0.56% error
+  current_cal: "0.9848"        # +1.54% error
+  power_cal:   "0.9662"        # +3.50% error → worst of the four
+  threshold_default: "5"
+  restore_mode: ALWAYS_OFF
+
+packages:
+  base: !include ../../common/s31-base.yaml

@@ -1,0 +1,15 @@
+# Real per-device file for sumgup0's computer outlet.
+# Calibration values measured 2026-04-25; see ./calibration-data.csv.
+
+substitutions:
+  device_name: outlet-computer
+  friendly_name: Computer Outlet
+  area: Office
+  voltage_cal: "1.0045"        # -0.45% error
+  current_cal: "0.9961"        # +0.39% error
+  power_cal:   "0.9852"        # +1.50% error
+  threshold_default: "10"
+  restore_mode: ALWAYS_ON      # desktop should keep power on through HA blips
+
+packages:
+  base: !include ../../common/s31-base.yaml

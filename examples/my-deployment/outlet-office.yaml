@@ -1,0 +1,15 @@
+# Real per-device file for sumgup0's office outlet.
+# Calibration values measured 2026-04-25; see ./calibration-data.csv.
+
+substitutions:
+  device_name: outlet-office
+  friendly_name: Office Outlet
+  area: Office
+  voltage_cal: "1.0059"        # -0.59% error (S31 reads voltage low)
+  current_cal: "0.9961"        # +0.39% error
+  power_cal:   "0.9864"        # +1.38% error
+  threshold_default: "10"
+  restore_mode: RESTORE_DEFAULT_OFF
+
+packages:
+  base: !include ../../common/s31-base.yaml

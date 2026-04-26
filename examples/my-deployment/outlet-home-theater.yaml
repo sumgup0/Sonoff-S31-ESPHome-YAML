@@ -1,0 +1,17 @@
+# Real per-device file for sumgup0's home-theater outlet.
+# Calibration values measured 2026-04-25 against Kill-A-Watt P3 with a
+# 750 W space heater on lowest setting. See ./calibration-data.csv for
+# the raw measurements that produced these ratios.
+
+substitutions:
+  device_name: outlet-home-theater
+  friendly_name: Home Theater Outlet
+  area: Living Room
+  voltage_cal: "1.00"          # +0.22% error → within rounding noise, leave at 1.00
+  current_cal: "0.9866"        # +1.37% error → fixed
+  power_cal:   "0.9731"        # +2.76% error → fixed (worst of the four chips on power)
+  threshold_default: "5"
+  restore_mode: ALWAYS_OFF
+
+packages:
+  base: !include ../../common/s31-base.yaml

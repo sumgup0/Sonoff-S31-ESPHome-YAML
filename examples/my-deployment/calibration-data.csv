@@ -1,0 +1,17 @@
+outlet,area,test_date,heater_setting_W,set,V_kaw,V_s31,I_kaw,I_s31,P_kaw,P_s31,PF_kaw,PF_s31,notes
+outlet-home-theater,Living Room,2026-04-25,750,idle,121.5,122.0,,,,,,,baseline before heater on
+outlet-home-theater,Living Room,2026-04-25,750,1,119.9,120.2,5.86,5.93,701,719.6,0.99,Unknown,
+outlet-home-theater,Living Room,2026-04-25,750,2,119.9,120.0,5.84,5.93,699,719.1,1.00,Unknown,
+outlet-home-theater,Living Room,2026-04-25,750,3,119.7,120.1,5.86,5.94,702,721.4,0.99,Unknown,
+outlet-office,Office,2026-04-25,750,idle,121.6,120.7,,,,,,,
+outlet-office,Office,2026-04-25,750,1,119.2,118.7,5.84,5.87,697,706.5,0.99,Unknown,
+outlet-office,Office,2026-04-25,750,2,119.4,118.7,5.84,5.87,697,707.2,1.00,Unknown,
+outlet-office,Office,2026-04-25,750,3,119.6,118.7,5.86,5.87,699,708.1,1.00,Unknown,
+outlet-misc,Other,2026-04-25,750,idle,121.2,121.4,,,,,,,
+outlet-misc,Other,2026-04-25,750,1,118.9,119.7,5.83,5.92,693,718.4,0.99,0.95,
+outlet-misc,Other,2026-04-25,750,2,119.1,119.6,5.83,5.92,694,717.2,0.99,0.95,
+outlet-misc,Other,2026-04-25,750,3,119.1,119.8,5.83,5.92,694,718.2,0.99,0.95,
+outlet-computer,Office,2026-04-25,750,idle,121.3,121.0,,,,,,,
+outlet-computer,Office,2026-04-25,750,1,119.2,118.8,5.86,5.87,696,706.0,1.00,Unknown,
+outlet-computer,Office,2026-04-25,750,2,119.1,118.8,5.84,5.87,695,705.6,1.00,Unknown,
+outlet-computer,Office,2026-04-25,750,3,118.4,117.5,5.81,5.84,685,695.5,1.00,Unknown,brief voltage sag during set 3 (other circuit load)
