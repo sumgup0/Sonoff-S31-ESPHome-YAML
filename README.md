@@ -1,4 +1,4 @@
-# sonoff-s31-esphome
+# Sonoff-S31-ESPHome-YAML
 
 ESPHome configuration for **Sonoff S31 smart outlets**, with a shared template, a generic per-device starter, a worked example using real measurements, and design notes.
 
@@ -25,14 +25,14 @@ For someone with one or more S31s and an existing Home Assistant + ESPHome Build
 
    ```bash
    cd /config/esphome
-   git clone https://github.com/<your-account>/sonoff-s31-esphome.git
+   git clone https://github.com/sumgup0/Sonoff-S31-ESPHome-YAML.git
    # Or download as ZIP and extract.
    ```
 
 2. **Set up secrets**. Copy and edit:
 
    ```bash
-   cp sonoff-s31-esphome/secrets.yaml.example secrets.yaml
+   cp Sonoff-S31-ESPHome-YAML/secrets.yaml.example secrets.yaml
    ```
 
    Fill in real values for `wifi_ssid`, `wifi_password`, `fallback_password`, `ota_password`, `web_username`, `web_password`. Generate the `api_encryption_key` with the inline PowerShell snippet, or with `openssl rand -base64 32` if you have OpenSSL.
@@ -40,7 +40,7 @@ For someone with one or more S31s and an existing Home Assistant + ESPHome Build
 3. **Create a per-device file** for each S31. Copy the starter:
 
    ```bash
-   cp sonoff-s31-esphome/outlet-template.yaml.example outlet-kitchen.yaml
+   cp Sonoff-S31-ESPHome-YAML/outlet-template.yaml.example outlet-kitchen.yaml
    ```
 
    Edit the substitutions block: pick `device_name`, `friendly_name`, `area`, and `restore_mode` for the outlet. Leave the calibration values at `"1.00"` initially.
@@ -56,7 +56,7 @@ After step 4, the device shows up in HA with all sensors and the relay control. 
 ## Repo tour
 
 ```
-sonoff-s31-esphome/
+Sonoff-S31-ESPHome-YAML/
 ├── README.md                              ← you are here
 ├── LICENSE                                ← MIT
 ├── .gitignore                             ← excludes secrets.yaml + build dirs
