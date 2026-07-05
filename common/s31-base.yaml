@@ -250,8 +250,9 @@ button:
     entity_category: diagnostic
 
 # ── Blue LED on the front of the S31 ─────────────────────────────
-# ESPHome system status indicator: fast blink = no WiFi, slow blink
-# = no API, solid = healthy.
+# ESPHome system status indicator: OFF when healthy (by design — a
+# dark LED means all is well). Blinks slowly on warnings (e.g., API
+# disconnected), quickly on errors (e.g., no WiFi).
 status_led:
   pin:
     number: GPIO13

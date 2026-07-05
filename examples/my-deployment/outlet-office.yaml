@@ -9,7 +9,7 @@ substitutions:
   current_cal: "0.9961"        # +0.39% error
   power_cal:   "0.9864"        # +1.38% error
   threshold_default: "10"
-  restore_mode: RESTORE_DEFAULT_OFF
+  restore_mode: RESTORE_DEFAULT_ON
 
 packages:
   base: !include ../../common/s31-base.yaml

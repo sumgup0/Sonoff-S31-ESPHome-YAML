@@ -11,7 +11,7 @@ substitutions:
   current_cal: "0.9866"        # +1.37% error → fixed
   power_cal:   "0.9731"        # +2.76% error → fixed (worst of the four chips on power)
   threshold_default: "5"
-  restore_mode: ALWAYS_OFF
+  restore_mode: RESTORE_DEFAULT_ON
 
 packages:
   base: !include ../../common/s31-base.yaml
